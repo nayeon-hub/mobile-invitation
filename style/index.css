@@ -171,9 +171,10 @@ body {
   border: 5px double #f4f0ea;
   border-radius: 2px;
   width: 80%;
-  margin: 64px auto;
+  margin: 64px auto 128px;
   text-align: center;
   padding: 2.5em 1em;
+  font-size: 16px;
 }
 
 .announce h2 {
