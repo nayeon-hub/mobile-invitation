@@ -103,7 +103,6 @@ body {
 
 .placeInfo h2 {
   font-size: 1.25rem;
-
   font-weight: 500;
   text-align: center;
 }
@@ -166,4 +165,51 @@ body {
 
 .parking {
   margin-top: 36px;
+}
+
+.announce {
+  border: 5px double #f4f0ea;
+  border-radius: 2px;
+  width: 80%;
+  margin: 64px auto;
+  text-align: center;
+  padding: 2.5em 1em;
+}
+
+.announce h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.announce div {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+
+footer {
+  height: 60px;
+  padding: 32px 0 0;
+  background-color: #fcfcfa;
+}
+
+footer div {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+footer button {
+  padding: 0;
+  border: none;
+  background: inherit;
+  font-family: "MaruBuri-Regular";
+  color: #584433;
+}
+
+footer button + button {
+  margin-left: 40px;
 }
