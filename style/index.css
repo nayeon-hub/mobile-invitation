@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "MaruBuri-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #f4f0ea;
+  margin: 0;
+  font-family: MaruBuri-Regular, serif;
+}
+
+img {
+  width: 100%;
+}
+
+.inviteMessage {
+  text-align: center;
+  color: #584433;
+  padding: 64px 32px;
+  font-size: 14px;
+}
+
+.inviteMessage h2 {
+  font-size: 20px;
+  margin-bottom: 64px;
+}
+
+.inviteMessage > p > span:first-child {
+  display: block;
+  margin-bottom: 24px;
+  line-height: 27px;
+}
+
+.inviteMessage > p > span:last-child {
+  display: block;
+  margin-bottom: 24px;
+  line-height: 27px;
+}
+
+.linkBar {
+  width: 1px;
+  height: 64px;
+  background-color: #584433;
+  margin: 64px auto;
+}
+
+.personList {
+  padding: 0 32px;
+}
+
+.personList p {
+  text-align: left;
+}
+
+.personItem {
+  text-align: left;
+  margin-bottom: 12px;
+  line-height: 21px;
+}
+
+.itemTitle {
+  font-weight: 700;
+  display: block;
+}
+
+.personList h2 {
+  font-size: 20px;
+  margin-bottom: 64px;
+  text-align: center;
+}
