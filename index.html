@@ -65,8 +65,46 @@
     </div>
     <div class="placeInfo">
       <h2>오시는 길</h2>
-      <div id="map" style="width: 100%; height: 400px"></div>
+      <div class="bottomBar"></div>
+      <div class="address">
+        <div class="addressText">
+          <p>제주특별자치도 제주시 용담로 1길 27</p>
+          <p>복된교회 1층 본당</p>
+        </div>
+        <div id="map" style="width: 100%; height: 400px"></div>
+        <div class="placeDetailButton">지도 자세히 보기</div>
+        <div class="directions">
+          <div class="bus">
+            <div class="busTitle">버스</div>
+            <div class="busContent">
+              <span>[제주국제공항 출발]</span>
+              <span
+                >제주국제공항3(용담,시청) 정류장 승차 -> 용담1동주민센터 하차 /
+                316, 325, 326, 365번
+              </span>
+            </div>
+            <div class="busContent">
+              <span>[제주버스터미널 출발]</span>
+              <span>
+                제주버스터미널 정류장 승차 -> 대학동 하차 / 431, 462, 440, 444번
+              </span>
+            </div>
+          </div>
+          <div class="parking">
+            <div class="parkingTitle">주차</div>
+            <div><span>교회 앞 야외 주차장</span></div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="announce">
+      <p>임직식 전 식사 안내</p>
+      <p>
+        -장소 : 제주특별자치도 제주시 서문로 37-11 1층 순수한 둠비 - 일자 :
+        2024년 4월 28일 일요일 - 시간 : 17:00 - 18:00
+      </p>
+    </div>
+    <div>카카오톡 공유하기</div>
     <script>
       var mapOptions = {
         center: new naver.maps.LatLng(33.5155439912491, 126.506907618487),

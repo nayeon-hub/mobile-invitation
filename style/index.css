@@ -10,6 +10,7 @@ body {
   background-color: #fff;
   margin: 0;
   font-family: MaruBuri-Regular, serif;
+  color: #584433;
 }
 
 .intro {
@@ -31,6 +32,7 @@ body {
   font-size: 1.25rem;
   margin-bottom: 64px;
   font-weight: 500;
+  text-align: center;
 }
 
 .inviteMessage > p {
@@ -97,4 +99,71 @@ body {
 
 .placeInfo {
   padding: 4rem 0;
+}
+
+.placeInfo h2 {
+  font-size: 1.25rem;
+
+  font-weight: 500;
+  text-align: center;
+}
+
+.bottomBar {
+  width: 1.25em;
+  height: 1px;
+  margin: 0.25em auto 2rem;
+  background-color: #584433;
+}
+
+.placeDetailButton {
+  margin-bottom: 2rem;
+  padding: 1.25em 0;
+  font-size: 0.75em;
+  line-height: 1em;
+  cursor: pointer;
+  background-color: #f4f0ea;
+  text-align: center;
+}
+
+.address {
+  text-align: center;
+  background-color: #fcfcfa;
+}
+
+.addressText {
+  padding: 1.25em 0;
+}
+
+.addressText > p:first-child {
+  font-size: 14px;
+}
+.directions {
+  text-align: left;
+  padding: 3.5em 24px;
+  font-size: 14px;
+}
+
+.busContent {
+  display: flex;
+  flex-direction: column;
+  line-height: 21px;
+}
+
+.busContent span + span {
+  margin-top: 4px;
+}
+
+.bus div + div,
+.parking div + div {
+  padding-top: 0.75rem;
+}
+
+.busTitle,
+.parkingTitle {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.parking {
+  margin-top: 36px;
 }
