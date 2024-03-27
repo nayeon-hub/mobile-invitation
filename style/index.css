@@ -7,37 +7,49 @@
 }
 
 body {
-  background-color: #f4f0ea;
+  background-color: #fff;
   margin: 0;
   font-family: MaruBuri-Regular, serif;
 }
 
-img {
+.intro {
+  padding: 4rem 0;
+}
+
+.intro > img {
   width: 100%;
 }
 
 .inviteMessage {
   text-align: center;
   color: #584433;
-  padding: 64px 32px;
+  padding: 4rem 32px 0;
   font-size: 14px;
 }
 
 .inviteMessage h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-bottom: 64px;
+  font-weight: 500;
+}
+
+.inviteMessage > p {
+  font-size: 0.875rem;
 }
 
 .inviteMessage > p > span:first-child {
   display: block;
-  margin-bottom: 24px;
-  line-height: 27px;
+  margin-bottom: 15px;
 }
 
 .inviteMessage > p > span:last-child {
   display: block;
-  margin-bottom: 24px;
-  line-height: 27px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.inviteMessage > p > span {
+  line-height: 26px;
 }
 
 .linkBar {
@@ -48,26 +60,41 @@ img {
 }
 
 .personList {
-  padding: 0 32px;
+  padding: 0 0 64px;
 }
 
 .personList p {
-  text-align: left;
+  text-align: center;
 }
 
 .personItem {
-  text-align: left;
-  margin-bottom: 12px;
+  text-align: center;
   line-height: 21px;
+}
+.personItem + .personItem {
+  margin-top: 38px;
 }
 
 .itemTitle {
   font-weight: 700;
-  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.itemBox {
+  font-size: 16px;
 }
 
 .personList h2 {
-  font-size: 20px;
-  margin-bottom: 64px;
+  font-size: 16px;
+  margin-bottom: 38px;
   text-align: center;
+}
+
+.personItem .itemBox + .itemBox {
+  margin-top: 5px;
+}
+
+.placeInfo {
+  padding: 4rem 0;
 }
