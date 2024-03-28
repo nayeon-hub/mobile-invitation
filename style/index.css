@@ -19,6 +19,8 @@ body {
 
 .intro {
   padding: 4rem 0;
+  width: 100%;
+  min-height: 300px;
 }
 
 .intro > img {
