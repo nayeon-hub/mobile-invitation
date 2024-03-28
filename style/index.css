@@ -13,6 +13,10 @@ body {
   color: #584433;
 }
 
+.layout {
+  padding: 4rem 0;
+}
+
 .intro {
   padding: 4rem 0;
 }
@@ -33,6 +37,12 @@ body {
   margin-bottom: 64px;
   font-weight: 500;
   text-align: center;
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-delay: 0s;
 }
 
 .inviteMessage > p {
@@ -97,11 +107,30 @@ body {
   margin-top: 5px;
 }
 
-.placeInfo {
+.dateInfo {
   padding: 4rem 0;
+  background-color: #fcfcfa;
+  text-align: center;
+  border-top: 1px solid #f6f6f6;
+  border-bottom: 1px solid #f6f6f6;
 }
 
-.placeInfo h2 {
+.dateDate {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.dateDday {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.placeInfo {
+  border-bottom: 1px solid #f6f6f6;
+}
+
+.placeInfo h2,
+.dateInfo h2 {
   font-size: 1.25rem;
   font-weight: 500;
   text-align: center;
@@ -115,7 +144,6 @@ body {
 }
 
 .placeDetailButton {
-  margin-bottom: 2rem;
   padding: 1.25em 0;
   font-size: 0.75em;
   line-height: 1em;
@@ -127,25 +155,52 @@ body {
 .address {
   text-align: center;
   background-color: #fcfcfa;
+  border-bottom: 1px solid #f6f6f6;
+}
+
+.address p {
+  margin: 0;
+}
+
+.addressDetail {
+  padding: 3.5rem 24px 0;
 }
 
 .addressText {
   padding: 1.25em 0;
+  text-align: center;
 }
 
-.addressText > p:first-child {
-  font-size: 14px;
+.addressDetailText {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.125rem;
 }
+
+.addressDetailTextSpot {
+  white-space: pre-wrap;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .directions {
   text-align: left;
-  padding: 3.5em 24px;
+  padding: 0 0 56px;
   font-size: 14px;
+}
+
+.middleBar {
+  width: 40px;
+  height: 1px;
+  background-color: #584433;
+  margin: 64px auto;
 }
 
 .busContent {
   display: flex;
   flex-direction: column;
   line-height: 21px;
+  font-size: 0.875rem;
 }
 
 .busContent span + span {
@@ -171,7 +226,7 @@ body {
   border: 5px double #f4f0ea;
   border-radius: 2px;
   width: 80%;
-  margin: 64px auto 128px;
+  margin: 0 auto;
   text-align: center;
   padding: 2.5em 1em;
   font-size: 16px;
@@ -191,9 +246,14 @@ body {
 }
 
 footer {
-  height: 60px;
-  padding: 32px 0 0;
+  padding: 32px 0 32px;
   background-color: #fcfcfa;
+  color: #584433;
+  border-top: 1px solid #f6f6f6;
+}
+
+footer img {
+  color: #584433;
 }
 
 footer div {
@@ -201,6 +261,7 @@ footer div {
   width: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 footer button {
@@ -209,8 +270,23 @@ footer button {
   background: inherit;
   font-family: "MaruBuri-Regular";
   color: #584433;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 footer button + button {
   margin-left: 40px;
+}
+
+footer img {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.kakaoLogo {
+  width: 18px;
+  height: 18px;
+  padding-top: 5px;
 }
