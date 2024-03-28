@@ -171,9 +171,13 @@
       const placeButton = document.querySelector(".placeDetailButton");
       placeButton.addEventListener("click", (e) => {
         e.preventDefault();
-        window.open(
-          "https://map.naver.com/p?title=%EB%B3%B5%EB%90%9C%EA%B5%90%ED%9A%8C&lng=126.506907618487&lat=33.5155439912491&zoom=21&type=0&c=15.00,0,0,0,dh"
-        );
+        const positions = marker.getPosition();
+        window.location.href =
+          "http://map.naver.com/index.nhn?enc=utf8&level=2&lng=" +
+          positions.lng() +
+          "&lat=" +
+          positions.lat() +
+          "&pinTitle=복된교회&pinType=SITE";
       });
     </script>
   </body>
