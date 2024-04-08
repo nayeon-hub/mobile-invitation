@@ -6,6 +6,10 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #144342;
   margin: 0;
@@ -15,10 +19,38 @@ body {
 
 main {
   background-color: #144342;
+  position: relative;
+}
+
+p,
+span {
+  word-break: keep-all;
 }
 
 .layout {
   padding: 4rem 0;
+}
+
+.audioController {
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  padding: 0.625rem 0.2rem;
+  z-index: 400;
+  width: 100%;
+}
+
+#audioBtn {
+  width: 2.125rem;
+  height: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  background-color: transparent;
+  border: none;
+}
+
+#audioBtn > img {
+  width: 100%;
+  height: 100%;
 }
 
 .intro {
@@ -29,6 +61,7 @@ main {
 
 .intro > img {
   width: 100%;
+  object-fit: cover;
 }
 
 .inviteMessage {
@@ -114,11 +147,9 @@ main {
 }
 
 .dateInfo {
-  padding: 4rem 0;
+  padding: 4rem 0.2rem;
   background-color: #123c3b;
   text-align: center;
-  /* border-top: 1px solid #0c2827; */
-  /* border-bottom: 1px solid #0c2827; */
 }
 
 .dateDate {
@@ -129,10 +160,6 @@ main {
 .dateDday {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.placeInfo {
-  /* border-bottom: 1px solid #0c2827; */
 }
 
 .placeInfo h2,
@@ -161,7 +188,6 @@ main {
 .address {
   text-align: center;
   background-color: #123c3b;
-  /* border-bottom: 1px solid #0c2827; */
 }
 
 .address p {
@@ -229,8 +255,6 @@ main {
 }
 
 .announce {
-  /* border: 5px double #0c2827; */
-  /* border-radius: 2px; */
   width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -255,7 +279,6 @@ footer {
   padding: 32px 0 32px;
   background-color: #144342;
   color: #fff;
-  /* border-top: 1px solid #0c2827; */
 }
 
 footer img {

@@ -12,9 +12,14 @@
   </head>
   <body>
     <main>
-      <audio autoplay="autoplay">
-        <source src="./asset/instrumental.mp3" type="audio/mp3" />
-      </audio>
+      <div class="audioController">
+        <audio autoplay="autoplay" id="audio">
+          <source src="./asset/instrumental.mp3" type="audio/mp3" />
+        </audio>
+        <button id="audioBtn">
+          <img src="./asset/icon/volume-up.svg" alt="" />
+        </button>
+      </div>
       <div class="intro">
         <img src="./asset/icon/newPoster.png" alt="" />
       </div>
@@ -181,6 +186,18 @@
           "&lat=" +
           positions.lat() +
           "&pinTitle=복된교회&pinType=SITE";
+      });
+
+      const pauseButton = document.getElementById("audioBtn");
+      const audio = document.getElementById("audio");
+      const imgTag = document.querySelector("img");
+
+      pauseButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        audio.paused ? audio.play() : audio.pause();
+        audio.paused
+          ? (imgTag.src = "./asset/icon/volume-off.svg")
+          : (imgTag.src = "./asset/icon/volume-up.svg");
       });
     </script>
   </body>
