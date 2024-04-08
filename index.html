@@ -12,6 +12,9 @@
   </head>
   <body>
     <main>
+      <audio autoplay="autoplay" controls="controls">
+        <source src="./asset/instrumental.mp3" type="audio/mp3" />
+      </audio>
       <div class="intro">
         <img src="./asset/icon/newPoster.png" alt="" />
       </div>
@@ -179,6 +182,10 @@
           positions.lat() +
           "&pinTitle=복된교회&pinType=SITE";
       });
+
+      let audio = document.getElementById("audio");
+      audio.volume = 0.2;
+      audio.play();
     </script>
   </body>
 </html>
