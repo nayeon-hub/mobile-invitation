@@ -10,7 +10,7 @@ body {
   background-color: #144342;
   margin: 0;
   font-family: MaruBuri-Regular, serif;
-  color: #ecece7;
+  color: #fff;
 }
 
 main {
@@ -33,7 +33,7 @@ main {
 
 .inviteMessage {
   text-align: center;
-  color: #ecece7;
+  color: #fff;
   padding: 4rem 32px 0;
   font-size: 14px;
 }
@@ -254,12 +254,12 @@ main {
 footer {
   padding: 32px 0 32px;
   background-color: #144342;
-  color: #ecece7;
+  color: #fff;
   /* border-top: 1px solid #0c2827; */
 }
 
 footer img {
-  color: #ecece7;
+  color: #fff;
 }
 
 footer div {
@@ -275,7 +275,7 @@ footer button {
   border: none;
   background: inherit;
   font-family: "MaruBuri-Regular";
-  color: #ecece7;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
